@@ -5,7 +5,7 @@ import { Adobe } from '@icons-pack/react-simple-icons';
 const About: React.FC = () => {
   return (
     <>
-      <Jumbotron>
+      <Jumbotron className="m-3">
         <h1>Educação</h1>
         <br />
         <Adobe></Adobe>

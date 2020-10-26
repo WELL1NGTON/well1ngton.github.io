@@ -1,12 +1,16 @@
 import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import { Gmail, Microsoftoutlook, Whatsapp, Telegram } from '@icons-pack/react-simple-icons';
 
 const About: React.FC = () => {
   return (
     <>
-      <Jumbotron>
+      <Jumbotron className="m-3">
+        Olá, eu sou
         <h1>Wellington Carlos Massola</h1>
-        <p>Rua Sampaio Bueno, 935 - Jaú/SP - (14) 98190-3527 - wellingtonmassola@gmail.com / wellingtonmassola@outlook.com</p>
+        Desenvolvedor Front e Back-end
+        <br />
+        <br />
         <p>
           Sou um desenvolvedor com principal conhecimento em Java, javascript e C.
           <br />
