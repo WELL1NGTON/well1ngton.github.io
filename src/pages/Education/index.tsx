@@ -1,6 +1,5 @@
 import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import { Adobe } from '@icons-pack/react-simple-icons';
 
 const About: React.FC = () => {
   return (
@@ -8,7 +7,6 @@ const About: React.FC = () => {
       <Jumbotron className="m-3">
         <h1>Educação</h1>
         <br />
-        <Adobe></Adobe>
         <h3>
           Bacharelado em Ciência da computação.
           <br />
