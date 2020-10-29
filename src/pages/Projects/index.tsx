@@ -87,12 +87,12 @@ const Projects: React.FC = () => {
 
           <Card.Footer className="bg-light text-black">
             <Card.Text>
-              <a href="https://play.google.com/store/apps/details?id=com.cmy.kawaiichat" target="_blank">
+              {/* <a href="https://play.google.com/store/apps/details?id=com.cmy.kawaiichat" target="_blank">
                 <Googleplay color="#414141" />
               </a>{' '}
               <a href="https://gitlab.com/caiquecorcioli/kawaiichat/" target="_blank">
                 <Gitlab color="#FCA121" />
-              </a>
+              </a> */}
             </Card.Text>
           </Card.Footer>
         </Card>

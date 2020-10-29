@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Navbar, Nav, Image, ButtonGroup, DropdownButton, Dropdown } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import getUnicodeFlagIcon from 'country-flag-icons/unicode';
@@ -22,8 +23,10 @@ const NavbarMyGHPages: React.FC = () => {
     <>
       !!!EM CONSTRUÇÃO!!!
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="/">
-          <Image src={profilePicture} width="50" height="50" className="d-inline-block align-middle" alt="React Bootstrap logo" roundedCircle />
+        <Navbar.Brand>
+          <Link to="/">
+            <Image src={profilePicture} width="50" height="50" className="d-inline-block align-middle" alt="React Bootstrap logo" roundedCircle />
+          </Link>
         </Navbar.Brand>
         <Navbar className="ml-auto">
           <Nav.Item> </Nav.Item>
@@ -31,11 +34,21 @@ const NavbarMyGHPages: React.FC = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="about">{t('navbar.about')}</Nav.Link>
-            <Nav.Link href="projects">{t('navbar.projects')}</Nav.Link>
-            <Nav.Link href="education">{t('navbar.education')}</Nav.Link>
-            <Nav.Link href="skills">{t('navbar.skills')}</Nav.Link>
-            <Nav.Link href="interests">{t('navbar.interests')}</Nav.Link>
+            <Nav.Link as={Link} to="/about">
+              {t('navbar.about')}
+            </Nav.Link>
+            <Nav.Link as={Link} to="/projects">
+              {t('navbar.projects')}
+            </Nav.Link>
+            <Nav.Link as={Link} to="/education">
+              {t('navbar.education')}
+            </Nav.Link>
+            <Nav.Link as={Link} to="/skills">
+              {t('navbar.skills')}
+            </Nav.Link>
+            <Nav.Link as={Link} to="/interests">
+              {t('navbar.interests')}
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
 
