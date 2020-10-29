@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import About from '../../pages/About';
 import Education from '../../pages/Education';
 import Skills from '../../pages/Skills';
+import Projects from '../../pages/Projects';
 
 const RouterMyGHPage: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const RouterMyGHPage: React.FC = () => {
         <Route path="/about" component={About} />
         <Route path="/education" component={Education} />
         <Route path="/skills" component={Skills} />
+        <Route path="/projects" component={Projects} />
       </Switch>
     </Router>
   );
