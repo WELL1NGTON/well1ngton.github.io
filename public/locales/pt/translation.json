@@ -1,4 +1,15 @@
 {
   "hello": "Olá",
-  "thankyou": "Obrigado"
+  "aboutPage": {
+    "introduction": {
+      "greetings": "Olá, eu sou",
+      "name": "Wellington Carlos Massola",
+      "personalTitle": "Desenvolvedor Front e Back-End"
+    },
+    "mainText": {
+      "part1": "Sou formado em Bacharelado em Ciência da Computação pela UNESP de Bauru. Meu TCC foi sobre o uso de programação não linear para o dimensionamento de biodigestores indianos (Desenvolvido utilizando Java).",
+      "part2": "Trabalhei nos últimos anos com logística, mas atualmente estou procurando emprego como desenvolvedor (Java / Javascript / C) e estou trabalhando em projetos pessoais e freelance no momento.",
+      "part3": "Atualmente estudando AWS Lambda e S3 e estou interessado principalmente em focar no desenvolvimento para back-end."
+    }
+  }
 }

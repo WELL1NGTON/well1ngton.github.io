@@ -13,9 +13,6 @@ function App() {
       <Navbar />
 
       <div>{t('hello')}</div>
-      {/* <FormControl aria-label="Text input with radio button" /> */}
-      {/* <input type="radio" value="en" name="language" defaultChecked /> English
-        <input type="radio" value="pt-BR" name="language" /> pt-BR */}
       <Router />
     </>
   );

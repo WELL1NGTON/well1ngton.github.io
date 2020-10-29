@@ -1,24 +1,21 @@
 import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import { useTranslation } from 'react-i18next';
 
 const About: React.FC = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <Jumbotron className="m-3">
-        Olá, eu sou
-        <h1>Wellington Carlos Massola</h1>
-        Desenvolvedor Front e Back-End
+        {t('aboutPage.introduction.greetings')}
+        <h1>{t('aboutPage.introduction.name')}</h1>
+        {t('aboutPage.introduction.personalTitle')}
         <br />
         <br />
-        <p>
-          Sou formado em Bacharelado em Ciência da Computação pela UNESP de Bauru. Meu TCC foi sobre o uso de programação não linear para o dimensionamento de
-          biodigestores indianos (Desenvolvido utilizando Java).
-        </p>
-        <p>
-          Trabalhei nos últimos anos com logística, mas atualmente estou procurando emprego como desenvolvedor (Java/Javascript/C) e estou trabalhando em
-          projetos pessoais e freelance no momento.
-        </p>
-        <p>Atualmente estudando AWS Lambda e S3 e estou interessado principalmente em focar no desenvolvimento para back-end.</p>
+        <p>{t('aboutPage.mainText.part1')}</p>
+        <p>{t('aboutPage.mainText.part2')}</p>
+        <p>{t('aboutPage.mainText.part3')}</p>
       </Jumbotron>
     </>
   );

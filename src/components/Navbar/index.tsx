@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { Navbar, Nav, Image, Button, ButtonGroup, DropdownButton, Dropdown } from 'react-bootstrap';
-import profilePicture from './profile_picture.jpeg';
+import { Navbar, Nav, Image, ButtonGroup, DropdownButton, Dropdown } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import { InputGroup, FormControl } from 'react-bootstrap';
 import getUnicodeFlagIcon from 'country-flag-icons/unicode';
+import profilePicture from './profile_picture.jpeg';
 
 const NavbarMyGHPages: React.FC = () => {
   const [selectedFlag, setCurrentFlag] = useState<'BR' | 'US'>('BR');
@@ -23,6 +22,7 @@ const NavbarMyGHPages: React.FC = () => {
     <Navbar bg="light" expand="lg">
       <Navbar.Brand href="/">
         <Image src={profilePicture} width="50" height="50" className="d-inline-block align-middle" alt="React Bootstrap logo" roundedCircle />
+        !!!EM CONSTRUÇÃO!!!
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
