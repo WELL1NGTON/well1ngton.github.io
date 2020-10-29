@@ -1,0 +1,15 @@
+{
+  "hello": "Hello",
+  "aboutPage": {
+    "introduction": {
+      "greetings": "Hi, I'm",
+      "name": "Wellington Carlos Massola",
+      "personalTitle": "Front and Back-End Developer"
+    },
+    "mainText": {
+      "part1": "I have a bachelor degree in Computer Science at the university UNESP in Bauru. My completion of course work was about the use of non-linear programming to the dimentions of an Indian Biodigester (Develeoped using Java).",
+      "part2": "The last few years I worked with logistics, but I am currently looking for a jog as a developer (Java / Javascript / C) and I am currently working on personal and frellance projects.",
+      "part3": "I am currently studying AWS Lambda and S3 and I am mainly interested in focussing on back-end development."
+    }
+  }
+}
