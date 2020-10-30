@@ -23,7 +23,7 @@
       "title": "Drone Delivery",
       "description": {
         "part1": "Jodo desenvolvido para Android utilizando a engine de jogos Godot 3.2. Primeiro jogo desenvolvido utilizando essa engine portanto é um jogo simples.",
-        "part2": "Para deixar o jogo mais interessante, eu fiz uma implementação de um algoritmo de simulação de \"rebanho\" de passáros (Boids) que originalmente foi desenvolvido por Crag Reynolds in 1989"
+        "part2": "Para deixar o jogo mais interessante, eu fiz uma implementação de um algoritmo de simulação de \"rebanho\" de passáros (Boids) que originalmente foi desenvolvido por Craig Reynolds in 1989."
       }
     },
     "boidsReactP5": {
@@ -52,6 +52,12 @@
       "title": "InvestmentBlog (em desenvolvimento)",
       "description": {
         "part1": "Em desenvolvimento (utilizando MERN stack e Docker)"
+      }
+    },
+    "githubPages": {
+      "title": "well1ngton.github.io (portifólio)",
+      "description": {
+        "part1": "Desenvolvido com React, Typescript, Bootstrap e i18next para suporte multilíngue."
       }
     }
   }

@@ -2,6 +2,8 @@ import React, { FC, SVGAttributes } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import { Card, Image, Carousel } from 'react-bootstrap';
 import { Gitlab, Googleplay, Github } from '@icons-pack/react-simple-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt as faLink } from '@fortawesome/free-solid-svg-icons';
 
 interface Props extends SVGAttributes<SVGElement> {
   color?: string;
@@ -27,6 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, links, im
     ['Googleplay', <Googleplay color="#414141" />],
     ['Gitlab', <Gitlab color="#FCA121" />],
     ['Github', <Github color="#181717" />],
+    ['Link', <FontAwesomeIcon icon={faLink} />],
   ]);
 
   return (
@@ -35,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, links, im
         <Carousel>
           {imgs.map((img, index) => {
             return (
-              <Carousel.Item interval={1000}>
+              <Carousel.Item interval={15000}>
                 <div className="d-flex justify-content-center">
                   <Image key={`${index}_${img}`} height="300" width="auto" src={img} />
                 </div>

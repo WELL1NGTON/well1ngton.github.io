@@ -1,4 +1,6 @@
-import { ProjectCardProps } from './ProjectCard';
+import { ProjectCardProps } from './components/ProjectCard';
+import boidsReactP501 from './images/boidsReactP501.png';
+import boidsReactP502 from './images/boidsReactP502.png';
 
 const projects: ProjectCardProps[] = [
   {
@@ -29,8 +31,8 @@ const projects: ProjectCardProps[] = [
   {
     title: 'projectsPage.boidsReactP5.title',
     description: ['projectsPage.boidsReactP5.description.part1', 'projectsPage.boidsReactP5.description.part2'],
-    links: [],
-    imgs: [],
+    links: [{ href: 'https://well1ngton.github.io/boids-react-p5/', icon: 'Link' }],
+    imgs: [boidsReactP502, boidsReactP501],
   },
 
   {
@@ -49,7 +51,7 @@ const projects: ProjectCardProps[] = [
   {
     title: 'projectsPage.investmentBlog.title',
     description: ['projectsPage.investmentBlog.description.part1', 'projectsPage.investmentBlog.description.part2'],
-    links: [],
+    links: [{ href: 'https://github.com/WELL1NGTON/investment-blog-docker', icon: 'Github' }],
     imgs: [],
   },
 ];

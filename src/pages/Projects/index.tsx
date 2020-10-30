@@ -1,12 +1,11 @@
 import React from 'react';
 import { CardColumns } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import projects from './components/Projects';
+import projects from './Projects';
 import PorjectCard from './components/ProjectCard';
 
 const Projects: React.FC = () => {
-  const { t } = useTranslation();
-  // const test = t('aboutPage.introduction.greetings');
+  useTranslation();
 
   return (
     <>
