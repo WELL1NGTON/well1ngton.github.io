@@ -43,9 +43,9 @@
     "kawaiiChat": {
       "title": "KawaiiChat",
       "description": {
-        "part1": "App para Android no estilo tinder onde pessoas podem que gostam de animações japonesas podem encontrar pessoas com gostos similares e próxima para conversar, responder quizzes, personalizar o perfil e enviar presentes.",
-        "part2": "Desenvolvido em Java utilizando Android Studio para desenvolver o FrontEnd e foi utilizado principalment Firebase Firestore e Firebase Cloud Functions para o BackEnd.",
-        "part3": "As Cloud Functions foram desenvolvidas em Typescript (Node.js), para encontrar usuários com base na localização foram utilizadas GeoHashs, as imagems de usuários foram armazenadas com a utilização do Firebase Cloud Storage e por fim foi utilizado AdMob para exibir propagandas."
+        "part1": "Android app where people that like japanese animations can find others with similar taste that live close to talk, answer quizzes, personalize the profile and send presents.",
+        "part2": "It was developed in Java using Android Studio to develop most of the Front End and it was mainly used Firebase Firestore and Firebase Cloud Functions for the BackEnd.",
+        "part3": "The Cloud Functions were developed in Typecript (Node.js), to find users based on location were utilized GeoHashs, the user images were stored on Firebase Cloud Storage and for ads AdMob was utilized."
       }
     },
     "investmentBlog": {
@@ -57,7 +57,8 @@
     "githubPages": {
       "title": "well1ngton.github.io (portfolio)",
       "description": {
-        "part1": "Developed with React, Typescript, Bootstrap and i18next for multilanguage support."
+        "part1": "This website was developed with React, Typescript, Bootstrap and i18next for multilanguage support.",
+        "part2": "You can find the GitHub link on the botton part of this card."
       }
     }
   }

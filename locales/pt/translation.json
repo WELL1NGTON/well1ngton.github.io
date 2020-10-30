@@ -57,7 +57,8 @@
     "githubPages": {
       "title": "well1ngton.github.io (portifólio)",
       "description": {
-        "part1": "Desenvolvido com React, Typescript, Bootstrap e i18next para suporte multilíngue."
+        "part1": "Esse site foi desenvolvido com React, Typescript, Bootstrap e i18next para suporte multilíngue.",
+        "part2": "Você pode encontrar o link para o github na parte de baixo desse card."
       }
     }
   }
