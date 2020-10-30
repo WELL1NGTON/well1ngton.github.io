@@ -1,72 +1,76 @@
-import React from 'react';
-import { Jumbotron, Card, Button, Carousel } from 'react-bootstrap';
-import { useTranslation } from 'react-i18next';
-import {
-  // Javascript,
-  // Java,
-  // Typescript,
-  // NodeDotJs,
-  // C,
-  // Cplusplus,
-  // Git,
-  // Android,
-  // Androidstudio,
-  // Godotengine,
-  // ReactJs,
-  // Firebase,
-  // Mongodb,
-  // Linux,
-  Googleplay,
-} from '@icons-pack/react-simple-icons';
+import React, { FC, SVGAttributes } from 'react';
+import { useTranslation, Trans } from 'react-i18next';
+import { Card, Image, Carousel } from 'react-bootstrap';
+import { Gitlab, Googleplay, Github } from '@icons-pack/react-simple-icons';
 
-type ProjectCardProps = {
-  title: string;
-  description: string;
-  links: string[];
-  imgs: string[];
+interface Props extends SVGAttributes<SVGElement> {
+  color?: string;
+  size?: string | number;
+}
+
+type CardLink = {
+  href: string;
+  icon: string;
 };
 
-const ProjectCard: React.FC<ProjectCardProps> = (props) => {
-  const { t } = useTranslation();
+export type ProjectCardProps = {
+  title: string;
+  description: string[];
+  imgs: string[];
+  links: CardLink[];
+};
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, links, imgs }) => {
+  useTranslation();
+
+  const cardLinks: Map<string, React.ReactElement> = new Map([
+    ['Googleplay', <Googleplay color="#414141" />],
+    ['Gitlab', <Gitlab color="#FCA121" />],
+    ['Github', <Github color="#181717" />],
+  ]);
 
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card className="bg-dark text-white">
       <Card.Header>
         <Carousel>
-          <Carousel.Item interval={1000}>
-            <img className="d-block w-100" src="/logo192.png" alt="First slide" />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item interval={500}>
-            <img className="d-block w-100" src="/logo192.png" alt="Third slide" />
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src="/logo192.png" alt="Third slide" />
-            <Carousel.Caption>
-              <h3 className="text-dark">Third slide label</h3>
-              <p className="text-dark">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
+          {imgs.map((img, index) => {
+            return (
+              <Carousel.Item interval={1000}>
+                <div className="d-flex justify-content-center">
+                  <Image key={`${index}_${img}`} height="300" width="auto" src={img} />
+                </div>
+              </Carousel.Item>
+            );
+          })}
         </Carousel>
       </Card.Header>
-      <Card.Img variant="top" src="holder.js/100px180" />
+
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Card.Title>
+          <Trans i18nKey={title} />
+        </Card.Title>
+
+        {description.map((desc, index) => {
+          return (
+            <Card.Text key={`${index}_${desc}`}>
+              <Trans i18nKey={desc} />
+            </Card.Text>
+          );
+        })}
       </Card.Body>
-      <Card.Footer>
-        <Card.Text>
-          <a href="">
-            <Googleplay color="#414141" />
-          </a>
+
+      <Card.Footer className="bg-light text-black">
+        <Card.Text className="text-dark">
+          {'Links: '}
+          {links.map((link, index) => {
+            return (
+              <>
+                <a href={link.href} target="_blank" rel="noopener noreferrer">
+                  {cardLinks.has(link.icon) ? cardLinks.get(link.icon) : <>{link.icon}</>}
+                </a>{' '}
+              </>
+            );
+          })}
         </Card.Text>
       </Card.Footer>
     </Card>
