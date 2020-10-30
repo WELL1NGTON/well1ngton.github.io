@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardColumns } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import projects from './Projects';
+import projects from './ProjectsData/Projects';
 import PorjectCard from './components/ProjectCard';
 
 const Projects: React.FC = () => {
